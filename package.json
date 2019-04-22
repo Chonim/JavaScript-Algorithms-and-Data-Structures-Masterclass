@@ -15,5 +15,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
