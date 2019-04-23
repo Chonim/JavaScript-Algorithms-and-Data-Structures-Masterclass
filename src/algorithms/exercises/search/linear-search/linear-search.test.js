@@ -1,4 +1,4 @@
-const linearSearch = require('./linear-serach')
+const linearSearch = require('./linear-search')
 
 it('loop throuth the array and return the index of the found element', () => {
   expect(linearSearch([1, 2, 3], 2)).toBe(1)
