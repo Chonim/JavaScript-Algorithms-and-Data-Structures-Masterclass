@@ -30,6 +30,20 @@ class SinglyLinkedList {
     if (!this.length) {
       return undefined
     }
+    let current = this.head
+    let newTail = current
+    while (current.next) {
+      newTail = current
+      current = current.next
+    }
+    this.tail = newTail
+    this.tail.next = null
+    this.length--
+    if (!this.length) {
+      this.head = null
+      this.tail = null
+    }
+    return current
   }
 }
 

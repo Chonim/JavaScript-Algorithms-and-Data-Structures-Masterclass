@@ -10,5 +10,7 @@ it('pushes a node', () => {
 })
 
 it('pops a node', () => {
-  expect(singlyLinkedList.pop()).toBe(undefined)
+  expect(singlyLinkedList.pop().val).toBe('are')
+  expect(singlyLinkedList.length).toBe(3)
+  expect(singlyLinkedList.tail.val).toBe('how')
 })
